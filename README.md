@@ -16,7 +16,7 @@ Build and ship a full machine-learning solution for predicting customer churn in
 - Model tracking: Runs, metrics, and the serialized model logged under a named MLflow experiment.
 - Inference service: FastAPI app exposing /predict (POST) and a root health check /.
 - Web UI: Gradio interface mounted at /ui for quick, shareable manual testing.
-- Containerization: Docker image with uvicorn entrypoint (src.app.main:app) listening on port 8000.
+- Containerization: Docker image with uvicorn entrypoint (src.app.app:app) listening on port 8000.
 - CI/CD: GitHub Actions builds the image and pushes to Docker Hub; optionally triggers an ECS service update.
 - Orchestration: AWS ECS Fargate runs the container (serverless).
 - Networking: Application Load Balancer (ALB) on HTTP:80 forwarding to a Target Group (IP targets on HTTP:8000).
