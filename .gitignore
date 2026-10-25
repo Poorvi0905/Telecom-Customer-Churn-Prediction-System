@@ -1,0 +1,44 @@
+# venvs
+.venv/
+venv/
+env/
+
+# OS cruft
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Big artifacts we don't want in git
+mlruns/
+artifacts/
+data/raw/
+data/processed/
+
+# BUT keep our bundled serving model in the repo
+!src/serving/model/
+!src/serving/model/**
+
+.venv311/
+.venv39/
+.env
+
+
+# Local environments
+.venv/
+.venv311/
+.venv39/
+# Local Gradio feedback
+flagged/.gradio/flagged/
+
+
+# Local Python environments
+.venv/
+.venv311/
+.venv39/
+
+# Local Gradio feedback
+flagged/
+.gradio/flagged/
